@@ -1,0 +1,32 @@
+@keyframes iconAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    color: var(--yellow);
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+}
+.icon-row__icon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.icon-row__icon i {
+  font-size: 35px;
+}
+.icon-row__icon span {
+  margin-top: 18px;
+}
+
+.icon-row__icon:hover i {
+  animation: iconAnimation 2s ease-in-out infinite;
+}
